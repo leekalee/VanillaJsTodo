@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Lesson: DOM Manipulation</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; transition: background 0.3s; }
+        .dark-mode { background: #222; color: #fff; }
+        .card { border: 1px solid #ccc; padding: 15px; margin-top: 10px; border-radius: 8px; }
+        .active { border-color: #007bff; box-shadow: 0 0 10px rgba(0,123,255,0.5); }
+        .task-list { margin-top: 20px; }
+        .completed { text-decoration: line-through; color: gray; }
+    </style>
+</head>
+<body>
+    <h1 id="main-title">Управление DOM</h1>
+    <button id="theme-toggle">Переключить тему</button>
+    
+    <div class="card">
+        <p class="description">Этот текст мы будем менять.</p>
+        <input type="text" id="user-input" placeholder="Введите что-нибудь">
+        <button id="add-btn">Добавить в список</button>
+    </div>
+    <button id="clear-btn">Удалить весь список</button>
+    <ul class="task-list" id="list"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>

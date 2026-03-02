@@ -1,1 +1,1 @@
-# VanillaJsTodo
+# Vanilla JS Todo App
